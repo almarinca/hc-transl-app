@@ -28,26 +28,45 @@ This project is a prototype for a web-based application designed to enable real-
 - **Google Translate API** (for language translation)
 - **Socket.io** (for real-time data exchange between frontend and backend)
 
+## Generative AI for Productivity & Rapid Prototyping
+Generative AI was leveraged in this project to enhance development efficiency and speed up prototyping. It was primarily used for:
+- Generating code boilerplate to accelerate development.
+- Creating HTML structure for React components.
+- Rapidly prompting for specific HTML layouts.
+- Styling the application efficiently using Tailwind CSS classes.
+- Obtaining code samples to resolve specific app functionalities.
+- Performing rapid searches on specific technologies and language syntax.
+- Utilizing AI-powered code suggestions directly in the code editor for live assistance.
+
 ## Installation & Setup
 
 ### Prerequisites
 
 Ensure you have the following installed on your system:
 
-- Node.js (for running the frontend)
-- Python 3 (for the Flask backend)
-- pip (for managing Python dependencies)
+- Python 3.x
+- Node.js and npm
+- Virtual environment for Python (optional but recommended)
+
+### Frontend Setup
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Start the development server:
+   ```sh
+   npm start
+   ```
 
 ### Backend Setup
-
-1. Navigate to the backend directory:
+1. Navigate to the `api` directory:
    ```sh
    cd api
    ```
-2. Create a virtual environment and activate it:
+2. Create and activate a virtual environment (optional):
    ```sh
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
    ```
 3. Install dependencies:
    ```sh
@@ -57,23 +76,6 @@ Ensure you have the following installed on your system:
    ```sh
    python run.py
    ```
-
-### Frontend Setup
-
-1. Navigate to the project root directory:
-   ```sh
-   cd ..
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the development server:
-   ```sh
-   npm start
-   ```
-
-The app should now be running on `http://localhost:3000`, with the backend on `http://localhost:5000`.
 
 ## Deployment
 
