@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Healthcare Translation Web App with Generative AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a prototype for a web-based application designed to enable real-time, multilingual translation between patients and healthcare providers. It was developed within 48 hours as part of a job application test to demonstrate technical proficiency, speed, and use of generative AI in application development.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Real-Time Speech-to-Text**: Converts spoken input into a text transcript using the Web Speech API.
+- **Live Translation**: Translates the transcribed text into a target language using the Google Translate API.
+- **Audio Playback**: Allows users to play back the translated text using the Web Speech Synthesis API.
+- **Language Selection**: Users can select input and output languages dynamically.
+- **Dual Transcript Display**: Displays both the original and translated text in real-time.
+- **Mobile-First Design**: Fully responsive UI optimized for both mobile and desktop devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend:
 
-### `npm test`
+- **React** (for building the UI)
+- **Web Speech API** (for real-time speech recognition)
+- **Web Speech Synthesis API** (for text-to-speech playback)
+- **Socket.io** (for real-time communication with the backend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend:
 
-### `npm run build`
+- **Python Flask** (for handling API requests and WebSockets communication)
+- **Google Translate API** (for language translation)
+- **Socket.io** (for real-time data exchange between frontend and backend)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure you have the following installed on your system:
 
-### `npm run eject`
+- Node.js (for running the frontend)
+- Python 3 (for the Flask backend)
+- pip (for managing Python dependencies)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Navigate to the backend directory:
+   ```sh
+   cd api
+   ```
+2. Create a virtual environment and activate it:
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Run the Flask server:
+   ```sh
+   python run.py
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Navigate to the project root directory:
+   ```sh
+   cd ..
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
 
-## Learn More
+The app should now be running on `http://localhost:3000`, with the backend on `http://localhost:5000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application is designed to be deployed using **Vercel** for the frontend and a cloud-based platform for the Flask backend (e.g., Render, AWS, or Google Cloud). Steps for deployment can be added as required.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Select the input and output languages.
+2. Click the microphone button to start speaking.
+3. View real-time transcription and translation.
+4. Click the "Speak" button to listen to the translated text.
+5. Click the "Reset" button to clear the text fields.
 
-### Analyzing the Bundle Size
+## Security Considerations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Data Privacy**: No user data is stored or transmitted beyond the necessary API requests.
+- **Secure WebSocket Communication**: Ensures real-time data exchange without exposing sensitive information.
 
-### Making a Progressive Web App
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Add user authentication for personalized settings.
+- Improve support for medical terminology using custom language models.
+- Implement better error handling and offline support.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is for demonstration purposes only and is not licensed for production use.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
