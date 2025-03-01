@@ -24,11 +24,11 @@ class Config:
 
     # Load credentials from environment variables
     GOOGLE_CREDENTIALS = {
-        "type": environ.get("GOOGLE_TYPE"),
+        "type": "service_account",
         "project_id": environ.get("GOOGLE_PROJECT_ID"),
         "private_key_id": environ.get("GOOGLE_PRIVATE_KEY_ID"),
         "private_key": environ.get("GOOGLE_PRIVATE_KEY").replace("\\n", "\n"),
         "client_email": environ.get("GOOGLE_CLIENT_EMAIL"),
-        "token_uri": environ.get("GOOGLE_TOKEN_URI"),
+        "token_uri": "https://oauth2.googleapis.com/token",
     }
 
