@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/languages",
+        "destination": "http://flask-env.eba-madfnwe3.us-east-1.elasticbeanstalk.com//languages"
+      },
+      {
+        "source": "/api",
+        "destination": "http://flask-env.eba-madfnwe3.us-east-1.elasticbeanstalk.com"
+      }
+    ]
+  }
+  
