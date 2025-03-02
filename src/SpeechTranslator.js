@@ -2,7 +2,7 @@ import './index.css';
 import { useState, useEffect, useRef } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("/api");
+const socket = io(`${process.env.REACT_APP_API_URL}`);
 
 export default function SpeechTranslator() {
   const [partialTranscript, setPartialTranscript] = useState("");
@@ -22,7 +22,7 @@ export default function SpeechTranslator() {
   const intervalRef = useRef(null); // Store interval reference
 
   useEffect(() => {
-    fetch("/api/languages")
+    fetch(`${process.env.REACT_APP_API_URL}/languages`)
       .then((response) => response.json())
       .then((data) => setLanguages(data))
       .catch((error) => console.error("Error fetching languages:", error));
