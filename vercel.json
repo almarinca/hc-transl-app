@@ -6,7 +6,7 @@
       },
       {
         "source": "/api",
-        "destination": "ws://transl-app-env.eba-madfnwe3.us-east-1.elasticbeanstalk.com"
+        "destination": "http://transl-app-env.eba-madfnwe3.us-east-1.elasticbeanstalk.com"
       }
     ]
   }
