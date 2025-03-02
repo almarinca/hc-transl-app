@@ -81,7 +81,7 @@ Ensure you have the following installed on your system:
 
 ## Deployment
 
-The application is designed to be deployed using **Vercel** for the frontend and a cloud-based platform for the Flask backend (e.g., Render, AWS, or Google Cloud). Steps for deployment can be added as required.
+The application is designed to be deployed using **Vercel** for the frontend and a cloud-based platform for the Flask backend (e.g., Render, AWS, or Google Cloud).
 
 ## Usage
 
