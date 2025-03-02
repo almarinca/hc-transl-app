@@ -15,6 +15,9 @@ app.config.from_object("config.Config")
 socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)  # Enable CORS for all routes, later specify origin for production
 
+@app.route("/")
+def health_check():
+    return jsonify(status="ok"), 200
 
 @app.route('/languages')
 def list_available_languages():
