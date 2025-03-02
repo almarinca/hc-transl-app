@@ -52,7 +52,7 @@ const HelpButton = () => {
               </span>
               &#41;
               to clear the
-              transcripted text area.
+              transcript text area.
               
               Click the "Playback" button
               &#40;
@@ -61,7 +61,7 @@ const HelpButton = () => {
               </span>
               &#41;
               to hear a playback audio
-              of the translated trancsription.
+              of the translated transcription.
             </p>
             <p className="text-gray-700">
                 * Currently Firefox and some other browsers are not supported,
