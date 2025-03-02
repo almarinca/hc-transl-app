@@ -27,6 +27,16 @@ const ColdStartAlert = () => {
               Please wait and reload the page
               if needed.
             </p>
+            <br/>
+            <h2 className="text-l text-gray-700 font-semibold mb-2">Browser Notice</h2>
+            <p className="text-gray-700">          
+              This prototype uses the SpeechRecognition
+              Web API, which is not supported by all
+              browsers. It works on Chrome, Edge, and
+              Safari (desktop) and Safari (mobile), but
+              not on Chrome for Android. If you experience
+              issues, please try a supported browser.
+            </p>
           </div>
         </div>
       )}
