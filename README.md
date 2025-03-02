@@ -1,5 +1,7 @@
 # Healthcare Translation Web App with Generative AI
 
+![image](https://github.com/user-attachments/assets/01149083-2afb-42bd-9446-cefea6f78e08)
+
 ## Overview
 
 This project is a prototype for a web-based application designed to enable real-time, multilingual translation between patients and healthcare providers. It was developed within 48 hours as part of a job application test to demonstrate technical proficiency, speed, and use of generative AI in application development.
