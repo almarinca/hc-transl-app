@@ -1,6 +1,6 @@
 # Healthcare Translation Web App with Generative AI
 
-![image](https://github.com/user-attachments/assets/01149083-2afb-42bd-9446-cefea6f78e08)
+![Nao Medical - Speech Translation - Google Chrome 2025-03-06 14-20-37](https://github.com/user-attachments/assets/fb78f36b-d4ef-4923-8ad5-aa612419a41f)
 
 ## Overview
 
